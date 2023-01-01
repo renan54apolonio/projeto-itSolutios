@@ -12,6 +12,7 @@ body{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .btn{
@@ -43,7 +44,8 @@ a{
     width: 100%;
     height: 80px;
     background: #111;
-    color: #eee;   
+    color: #eee;  
+    position: fixed; 
 }
 
 #navbar-container{
@@ -100,7 +102,132 @@ a{
     padding: 50px;
 }
 
+#clients-contener{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 15px;
+}
+
 .client{
     display: inline-block;
     width: 25%;
+}
+
+#features{
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#features-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 50px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#product{
+    width: 100%;
+    padding: 50px;
+}
+
+#productive-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#items {
+    width: 650px;
+}
+
+.item {
+    display: flex;
+    padding: 10px ;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+#testimonials{
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#testimonials-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.testimonial .testimonial-image{
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 20px ;
+}
+
+#galery{
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#galery-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.galery-image{
+    display: inline-block;
+    width: 340px;
+    height: 240px;
+    border-radius: 5px;
+}
+
+#footer{
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
+
+.criador{
+    color: #eee;
+    font-weight: bold;
+}
+
+.criador:hover{
+    text-decoration: underline;
 }
